@@ -9,7 +9,12 @@ export default function FormHandling() {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(input.age)
+        console.log(input)
+        myInputs(input)
+
+    }
+    const myInputs = ({ username, age, email, job }) => {
+        console.log(username, age, email, job)
     }
 
 
@@ -25,6 +30,7 @@ export default function FormHandling() {
                         onChange={handleChange}
                     />
                 </label>
+                <br />
                 <label>Enter Age:
                     <input
                         type="text"
@@ -33,7 +39,8 @@ export default function FormHandling() {
                         onChange={handleChange}
                     />
                 </label>
-                <label>Enter Age:
+                <br />
+                <label>Enter email:
                     <input
                         type="text"
                         name="email"
@@ -41,7 +48,8 @@ export default function FormHandling() {
                         onChange={handleChange}
                     />
                 </label>
-                <label>Enter Age:
+                <br />
+                <label>Enter Job:
                     <input
                         type="text"
                         name="job"
@@ -49,7 +57,7 @@ export default function FormHandling() {
                         onChange={handleChange}
                     />
                 </label>
-
+                <br />
                 <input type="submit" />
             </form>
         </div>
