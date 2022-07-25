@@ -29,7 +29,7 @@ export default function Destruction() {
     console.log(add)
 
 
-    
+
     //destruction in obj
     const obj = {
         name: "corola",
@@ -40,6 +40,14 @@ export default function Destruction() {
     const function1 = ({ name, color, year }) => {
         console.log("name is" + " " + name + " " + "color is" + " " + color + " " + "year is" + " " + year)
     }
+
+    //get uninque values from array 
+    const arr = [1, 1, 2, 2, 3, 3, 4, 4]
+    const newArray = new Set(arr)
+    console.log(newArray)
+
+
+
     useEffect(() => {
         function1(obj)
     })

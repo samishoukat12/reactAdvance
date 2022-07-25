@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { endPoint } from './config/Config'
 import Destruction from './destruction/Destruction';
+import FormHandling from './formHandling/FormHandling';
 
 function App() {
   const [storeData, setStoreData] = useState([]);
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <Destruction/>
+      <FormHandling/>
       {
         loading &&
         <>
