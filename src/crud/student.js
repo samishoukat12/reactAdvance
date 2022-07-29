@@ -22,7 +22,6 @@ export function Students() {
 
     setstudents([...newStudents]);
 
-    // console.log("newStudents", newStudents);
   };
 
   // UPDATE HANDLER
