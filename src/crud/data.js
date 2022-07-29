@@ -3,7 +3,7 @@ export const Data=[
         name: "sami shoukat",
         rollno: 18,
         class: "web and app development",
-        batch: "3"
+        batch: "5"
     },
     {
         name: "adnan",
