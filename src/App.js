@@ -4,7 +4,9 @@ import axios from 'axios';
 import { endPoint } from './config/Config'
 import Destruction from './destruction/Destruction';
 import FormHandling from './formHandling/FormHandling';
-import  Students1  from './crud/students';
+import Students1 from './crud/students';
+import CheckBox from './checkboxe/CheckBox';
+import { Check } from './checkboxe/Check';
 
 function App() {
   // const [storeData, setStoreData] = useState([]);
@@ -44,7 +46,8 @@ function App() {
           }
         </>
       } */}
-      <Students1/>
+      <Check />
+      {/* <Students1/> */}
     </div>
   );
 }
